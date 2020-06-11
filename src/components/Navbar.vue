@@ -12,7 +12,7 @@
         <v-icon right>mdi-exit-to-app</v-icon>
       </v-btn>
     </v-app-bar>
-    <v-navigation-drawer v-model="drawer" app class="indigo">
+    <v-navigation-drawer v-model="drawer" app dark temporary>
       <v-list>
         <v-list-item v-for="link in links" v-bind:key="link.text" router :to="link.route">
           <v-list-item-action>
@@ -33,9 +33,9 @@ export default {
     return {
       drawer: false,
       links: [
-        { icon: "mdi-view-dashboard", text: "Dashboard", route: "/" },
+        { icon: "mdi-view-dashboard", text: "Dashboard", route: "/dashboard" },
         { icon: "mdi-folder", text: "My Projects", route: "/projects" },
-        { icon: "mdi-person", text: "Team", route: "/team" }
+        { icon: "mdi-team", text: "Team", route: "/team" }
       ]
     };
   }
