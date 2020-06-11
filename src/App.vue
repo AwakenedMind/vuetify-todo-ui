@@ -2,7 +2,7 @@
   <div id="app">
     <v-app>
       <Navbar />
-      <v-content>
+      <v-content class="mx-4 mb-4 pr-4 pl-4">
         <router-link to="/">Home</router-link>|
         <router-link to="/about">About</router-link>
         <router-view />
